@@ -1,0 +1,15 @@
+html {
+    /* Be a good beta and keep a high number below for a safe web experience */
+    /* If you feel like alpha today, reduce the number to see naughty things */
+    --image-blur-rate: 20px;
+    --video-blur-rate: var(--image-blur-rate);
+}
+
+img {
+    filter: blur(var(--image-blur-rate));
+}
+
+video {
+    filter: blur(var(--video-blur-rate));
+}
+}
